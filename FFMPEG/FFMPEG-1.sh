@@ -44,12 +44,3 @@ ffmpeg \
     -acodec libmp3lame -b:a 128k -ar 44100 \
     -f tee -map 0:a:0 -flags +global_header -map 1:v -flags +global_header \
     "[f=flv]$LOCALNAME.flv|[f=flv]$RTMPURL"
-
-
-
-    Xsplit: paid xplit.com
-I have seen the following settings:
-Bitrate: 3500kbs
-Encoding Quality: 10
-Resolution: 900p
-Frame Rate: 60fps
